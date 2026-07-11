@@ -1,4 +1,4 @@
-<!-- Version: v2.0.3 -->
+<!-- Version: v2.0.4 -->
 <!doctype html>
 <html lang="ja">
 <head>
@@ -43,24 +43,201 @@
   </header>
 
   <main id="top">
+
     <section class="faq" id="faq">
-      <div class="container faq-layout">
-        <div><p class="eyebrow">FAQ</p><h2><span data-lang-content="ja" class="is-active">よくある質問</span><span data-lang-content="en">Frequently asked questions</span><span data-lang-content="th">คำถามที่พบบ่อย</span></h2><p><span data-lang-content="ja" class="is-active">初めて外国人材の採用を検討する企業様にも、タイから日本で働きたい方にも、わかりやすくご案内します。</span><span data-lang-content="en">We explain the process clearly for first-time employers and Thai people considering work in Japan.</span><span data-lang-content="th">อธิบายขั้นตอนอย่างเข้าใจง่ายสำหรับบริษัทที่เริ่มรับคนต่างชาติและผู้ที่สนใจทำงานในญี่ปุ่น</span></p></div>
-        <div class="faq-list">
-          <div class="faq-item is-open"><button class="faq-question" type="button" aria-expanded="true"><span data-lang-content="ja" class="is-active">企業はどの段階から相談できますか？</span><span data-lang-content="en">When can a company start a consultation?</span><span data-lang-content="th">บริษัทสามารถเริ่มปรึกษาได้ตั้งแต่ขั้นตอนไหน?</span><i class="ri-add-line"></i></button><div class="faq-answer"><span data-lang-content="ja" class="is-active">採用したい人材像や仕事内容が決まる前の段階でもご相談いただけます。まずは条件や課題をお聞かせください。</span><span data-lang-content="en">You can talk to us even before the job profile is finalized. Start by sharing your needs and concerns.</span><span data-lang-content="th">ปรึกษาได้แม้ยังไม่ได้กำหนดรายละเอียดงานอย่างสมบูรณ์ เริ่มจากการเล่าความต้องการและปัญหาของคุณ</span></div></div>
-          <div class="faq-item"><button class="faq-question" type="button" aria-expanded="false"><span data-lang-content="ja" class="is-active">タイ語での相談はできますか？</span><span data-lang-content="en">Can I consult in Thai?</span><span data-lang-content="th">สามารถปรึกษาเป็นภาษาไทยได้หรือไม่?</span><i class="ri-add-line"></i></button><div class="faq-answer"><span data-lang-content="ja" class="is-active">はい。タイ側の募集・教育から、日本での生活相談まで、タイ語でのサポートを想定しています。</span><span data-lang-content="en">Yes. Thai-language support is available for recruitment, training and everyday life in Japan.</span><span data-lang-content="th">ได้ เราดูแลเป็นภาษาไทยตั้งแต่การรับสมัคร การฝึกอบรม ไปจนถึงการใช้ชีวิตในญี่ปุ่น</span></div></div>
-          <div class="faq-item"><button class="faq-question" type="button" aria-expanded="false"><span data-lang-content="ja" class="is-active">入国後のサポートもお願いできますか？</span><span data-lang-content="en">Can you support people after they arrive?</span><span data-lang-content="th">ดูแลหลังเดินทางถึงญี่ปุ่นได้หรือไม่?</span><i class="ri-add-line"></i></button><div class="faq-answer"><span data-lang-content="ja" class="is-active">住居や生活立ち上げ、コミュニケーションなど、入国後に起こりやすい不安も継続してご相談いただけます。</span><span data-lang-content="en">Yes. We can continue to discuss housing, settling in and communication after arrival.</span><span data-lang-content="th">ได้ สามารถปรึกษาเรื่องที่พัก การเริ่มต้นชีวิต และการสื่อสารหลังเดินทางถึงญี่ปุ่น</span></div></div>
+      <div class="container">
+        <div class="section-head" style="margin-bottom: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+          <div>
+            <p class="eyebrow">FAQ</p>
+            <h2>
+              <span data-lang-content="ja" class="is-active">よくある質問</span>
+              <span data-lang-content="en">Frequently asked questions</span>
+              <span data-lang-content="th">คำถามที่พบบ่อย</span>
+            </h2>
+          </div>
+          <p>
+            <span data-lang-content="ja" class="is-active">初めて外国人材の採用を検討する企業様にも、タイから日本で働きたい方にも、わかりやすくご案内します。</span>
+            <span data-lang-content="en">We explain the process clearly for first-time employers and Thai people considering work in Japan.</span>
+            <span data-lang-content="th">อธิบายขั้นตอนอย่างเข้าใจง่ายสำหรับบริษัทที่เริ่มรับคนต่างชาติและผู้ที่สนใจทำงานในญี่ปุ่น</span>
+          </p>
+        </div>
+
+        <div class="faq-categories">
+          <!-- 企業様向け FAQ / For Companies -->
+          <div class="faq-category">
+            <h3 class="category-title">
+              <i class="ri-building-4-line"></i>
+              <span data-lang-content="ja" class="is-active">企業様向けのご質問</span>
+              <span data-lang-content="en">For Companies</span>
+              <span data-lang-content="th">สำหรับบริษัท</span>
+            </h3>
+            <div class="faq-list">
+              <!-- Q1 -->
+              <div class="faq-item is-open">
+                <button class="faq-question" type="button" aria-expanded="true">
+                  <span data-lang-content="ja" class="is-active">採用計画や業務内容が決まっていない段階から相談できますか？</span>
+                  <span data-lang-content="en">Can we consult before clarifying target roles and duties?</span>
+                  <span data-lang-content="th">สามารถปรึกษาได้ก่อนที่รายละเอียดงานจะชัดเจนหรือไม่?</span>
+                  <i class="ri-add-line"></i>
+                </button>
+                <div class="faq-answer">
+                  <span data-lang-content="ja" class="is-active">採用したい人材像や仕事内容が決まる前の段階でもご相談いただけます。まずは求める条件や課題をお聞かせください。</span>
+                  <span data-lang-content="en">Yes, you can start a consultation even before the job profile is finalized. We will guide you from the planning stage.</span>
+                  <span data-lang-content="th">ได้ คุณสามารถเริ่มปรึกษาได้แม้ยังไม่ได้กำหนดรายละเอียดงานอย่างสมบูรณ์</span>
+                </div>
+              </div>
+              <!-- Q2 -->
+              <div class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                  <span data-lang-content="ja" class="is-active">採用までにどのくらいの期間がかかりますか？</span>
+                  <span data-lang-content="en">How long does the recruitment process take?</span>
+                  <span data-lang-content="th">ขั้นตอนการรับสมัครใช้เวลานานแค่ไหน?</span>
+                  <i class="ri-add-line"></i>
+                </button>
+                <div class="faq-answer">
+                  <span data-lang-content="ja" class="is-active">職種やビザ申請の状況により異なりますが、募集開始から入国まで一般的に約4〜6ヶ月程度かかります。</span>
+                  <span data-lang-content="en">It typically takes about 4 to 6 months from the start of recruitment to arrival in Japan, depending on visa processing.</span>
+                  <span data-lang-content="th">โดยทั่วไปใช้เวลาประมาณ 4 ถึง 6 เดือน ตั้งแต่เริ่มรับสมัครจนถึงเดินทางเข้าประเทศญี่ปุ่น ขึ้นอยู่กับขั้นตอนวีซ่า</span>
+                </div>
+              </div>
+              <!-- Q3 -->
+              <div class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                  <span data-lang-content="ja" class="is-active">内定者への日本語教育や事前研修はどのように行われますか？</span>
+                  <span data-lang-content="en">How is Japanese language training conducted for candidates?</span>
+                  <span data-lang-content="th">มีการฝึกอบรมภาษาญี่ปุ่นสำหรับผู้ได้รับการคัดเลือกอย่างไร?</span>
+                  <i class="ri-add-line"></i>
+                </button>
+                <div class="faq-answer">
+                  <span data-lang-content="ja" class="is-active">タイ現地の日本語学校や弊社の学習施設にて、日本語教員が日常会話・マナー・文化理解を含む集中研修を行います。</span>
+                  <span data-lang-content="en">Professional Japanese instructors conduct intensive pre-entry training covering conversation, work manners, and culture at our Thai facilities.</span>
+                  <span data-lang-content="th">ครูสอนภาษาญี่ปุ่นมืออาชีพจะจัดฝึกอบรมอย่างเข้มข้น ครอบคลุมการสนทนา มารยาท และวัฒนธรรม ณ ศูนย์ฝึกอบรมในไทย</span>
+                </div>
+              </div>
+              <!-- Q4 -->
+              <div class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                  <span data-lang-content="ja" class="is-active">入国後の生活サポートや公的手続きの同行は依頼できますか？</span>
+                  <span data-lang-content="en">Can you support housing setups and official procedures after arrival?</span>
+                  <span data-lang-content="th">มีการดูแลเรื่องที่พักและขั้นตอนราชการหลังเดินทางถึงญี่ปุ่นหรือไม่?</span>
+                  <i class="ri-add-line"></i>
+                </button>
+                <div class="faq-answer">
+                  <span data-lang-content="ja" class="is-active">はい、住居の手配、市役所での手続き同行、生活立ち上げの初期ガイダンスなど、きめ細やかにサポートいたします。</span>
+                  <span data-lang-content="en">Yes. We provide full support including finding apartments, accompanying candidates to city offices, and setting up daily essentials.</span>
+                  <span data-lang-content="th">ใช่ เราดูแลครบวงจร ตั้งแต่การหาที่พัก การพาไปทำเรื่องที่อำเภอ และการตั้งค่าสิ่งจำเป็นในชีวิตประจำวัน</span>
+                </div>
+              </div>
+              <!-- Q5 -->
+              <div class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                  <span data-lang-content="ja" class="is-active">受け入れ後のトラブルやコミュニケーション不足への対応は？</span>
+                  <span data-lang-content="en">How do you handle workplace conflicts or language barriers after hire?</span>
+                  <span data-lang-content="th">จะจัดการอย่างไรหากมีปัญหาการสื่อสารหลังเริ่มงาน?</span>
+                  <i class="ri-add-line"></i>
+                </button>
+                <div class="faq-answer">
+                  <span data-lang-content="ja" class="is-active">タイ人通訳およびサポートスタッフが常駐しており、業務指示の通訳や生活上の不安解消のためにいつでも三者面談などで介入可能です。</span>
+                  <span data-lang-content="en">Our Thai-speaking staff and translators are always ready to support, providing counseling and three-way meetings when needed.</span>
+                  <span data-lang-content="th">เรามีเจ้าหน้าที่และล่ามชาวไทยคอยสนับสนุน สามารถให้คำปรึกษาและจัดประชุมสามฝ่ายได้ทุกเมื่อ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 応募者様向け FAQ / For Applicants -->
+          <div class="faq-category">
+            <h3 class="category-title">
+              <i class="ri-user-heart-line"></i>
+              <span data-lang-content="ja" class="is-active">求職者・応募者様向けのご質問</span>
+              <span data-lang-content="en">For Applicants</span>
+              <span data-lang-content="th">สำหรับผู้สมัครงาน</span>
+            </h3>
+            <div class="faq-list">
+              <!-- Q1 -->
+              <div class="faq-item is-open">
+                <button class="faq-question" type="button" aria-expanded="true">
+                  <span data-lang-content="ja" class="is-active">日本語があまり話せなくても応募できますか？</span>
+                  <span data-lang-content="en">Can I apply if I cannot speak Japanese well yet?</span>
+                  <span data-lang-content="th">สมัครงานได้ไหมหากยังพูดภาษาญี่ปุ่นไม่ได้?</span>
+                  <i class="ri-add-line"></i>
+                </button>
+                <div class="faq-answer">
+                  <span data-lang-content="ja" class="is-active">はい、応募可能です。内定後に現地の研修施設で日常会話から丁寧に教えますので、学習の意欲があれば心配ありません。</span>
+                  <span data-lang-content="en">Yes. We provide intensive Japanese classes after you pass the interview, so motivation to learn is the most important factor.</span>
+                  <span data-lang-content="th">ได้ เรามีการสอนภาษาญี่ปุ่นอย่างเป็นระบบหลังผ่านการสัมภาษณ์ ขอเพียงมีความตั้งใจเรียนรู้ก็สามารถสมัครได้</span>
+                </div>
+              </div>
+              <!-- Q2 -->
+              <div class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                  <span data-lang-content="ja" class="is-active">日本での住まい（アパート）はどうやって探しますか？</span>
+                  <span data-lang-content="en">How do I find an apartment in Japan?</span>
+                  <span data-lang-content="th">จะหาที่พักในญี่ปุ่นได้อย่างไร?</span>
+                  <i class="ri-add-line"></i>
+                </button>
+                <div class="faq-answer">
+                  <span data-lang-content="ja" class="is-active">企業様と連携し、入国前に家具付きアパートなどの安全な住居をあらかじめ手配しますので、ご安心ください。</span>
+                  <span data-lang-content="en">We cooperate with your employer to prepare safe housing (often furnished) before your arrival, so you do not need to search alone.</span>
+                  <span data-lang-content="th">เราประสานงานกับนายจ้างเพื่อเตรียมที่พักที่ปลอดภัย (พร้อมเฟอร์นิเจอร์) ให้คุณก่อนเดินทางถึง คุณจึงไม่ต้องกังวล</span>
+                </div>
+              </div>
+              <!-- Q3 -->
+              <div class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                  <span data-lang-content="ja" class="is-active">日本で病気や怪我をした場合、相談できますか？</span>
+                  <span data-lang-content="en">What happens if I get sick or injured in Japan?</span>
+                  <span data-lang-content="th">หากเจ็บป่วยหรือบาดเจ็บในญี่ปุ่น จะทำอย่างไร?</span>
+                  <i class="ri-add-line"></i>
+                </button>
+                <div class="faq-answer">
+                  <span data-lang-content="ja" class="is-active">はい、タイ人通訳やサポートスタッフが病院への同行や保険手続きのサポートをタイ語で行います。</span>
+                  <span data-lang-content="en">Our Thai-speaking staff will assist you in Thai, accompanying you to hospitals and helping with medical insurance procedures.</span>
+                  <span data-lang-content="th">เจ้าหน้าที่ชาวไทยจะช่วยเหลือคุณเป็นภาษาไทย ทั้งการพาไปโรงพยาบาลและการจัดการเรื่องประกันภัย</span>
+                </div>
+              </div>
+              <!-- Q4 -->
+              <div class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                  <span data-lang-content="ja" class="is-active">ビザや渡航書類の準備手続きは難しいですか？</span>
+                  <span data-lang-content="en">Is the visa and travel documentation process difficult?</span>
+                  <span data-lang-content="th">ขั้นตอนการเตรียมวีซ่าและเอกสารเดินทางยากไหม?</span>
+                  <i class="ri-add-line"></i>
+                </button>
+                <div class="faq-answer">
+                  <span data-lang-content="ja" class="is-active">必要な書類の準備方法や書き方は、弊社のスタッフがタイ現地および日本側からすべてわかりやすくガイダンスし、代理申請等をサポートします。</span>
+                  <span data-lang-content="en">Our team guides you step-by-step through both the Thailand and Japan stages, handling the complex applications on your behalf.</span>
+                  <span data-lang-content="th">ขั้นตอนการเตรียมวีซ่าและเอกสารเดินทางยากไหม? / ทีมงานของเราจะแนะนำคุณทีละขั้นตอนทั้งในไทยและญี่ปุ่น พร้อมจัดการคำร้องที่ซับซ้อนแทนคุณ</span>
+                </div>
+              </div>
+              <!-- Q5 -->
+              <div class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                  <span data-lang-content="ja" class="is-active">日本での仕事中、生活の中で困った時は誰に相談すればいいですか？</span>
+                  <span data-lang-content="en">Who can I contact if I face difficulties working or living in Japan?</span>
+                  <span data-lang-content="th">สามารถปรึกษาใครได้บ้างหากมีปัญหาในการทำงานหรือการใช้ชีวิตในญี่ปุ่น?</span>
+                  <i class="ri-add-line"></i>
+                </button>
+                <div class="faq-answer">
+                  <span data-lang-content="ja" class="is-active">エムワンプロジェクトの相談窓口へいつでもタイ語でご連絡いただけます。チャットや電話で親身に対応いたします。</span>
+                  <span data-lang-content="en">You can contact the M-One Project support desk anytime in Thai via chat or phone. We are here to help you.</span>
+                  <span data-lang-content="th">คุณสามารถติดต่อแผนกสนับสนุนของเอ็มวันได้ตลอดเวลาเป็นภาษาไทย ทั้งทางแชทหรือโทรศัพท์</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-  <section class="contact" id="contact">
+
+<section class="contact" id="contact">
       <div class="container contact-inner"><div><p class="eyebrow" style="color:#fff1e9">Start with a conversation</p><h2><span data-lang-content="ja" class="is-active">まずは、今の課題を<br>聞かせてください。</span><span data-lang-content="en">Tell us what you need first.</span><span data-lang-content="th">เล่าความต้องการของคุณให้เราฟังก่อน</span></h2><p><span data-lang-content="ja" class="is-active">採用を検討中の企業様も、日本で働きたい方も、相談窓口からお気軽にどうぞ。</span><span data-lang-content="en">Companies considering hiring and people seeking work in Japan are welcome to start with a conversation.</span><span data-lang-content="th">ทั้งบริษัทที่กำลังพิจารณารับสมัครและผู้ที่ต้องการทำงานในญี่ปุ่น สามารถเริ่มต้นปรึกษาได้</span></p></div><a class="button" href="index.html"><span data-lang-content="ja" class="is-active">お問い合わせ窓口へ</span><span data-lang-content="en">Contact desk</span><span data-lang-content="th">ติดต่อเรา</span><i class="ri-arrow-up-right-line"></i></a></div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© M-One Kikaku / M-One Project <span id="staff-version-display" style="opacity: 0.6; margin-left: 10px; font-size: 0.7rem;">v2.0.3</span></p>
+      <p>© M-One Kikaku / M-One Project <span id="staff-version-display" style="opacity: 0.6; margin-left: 10px; font-size: 0.7rem;">v2.0.4</span></p>
       <div class="footer-links">
         <a href="about.html"><span data-lang-content="ja" class="is-active">強み</span><span data-lang-content="en">About</span><span data-lang-content="th">จุดแข็ง</span></a>
         <a href="company.html"><span data-lang-content="ja" class="is-active">会社紹介</span><span data-lang-content="en">Profile</span><span data-lang-content="th">ข้อมูลบริษัท</span></a>

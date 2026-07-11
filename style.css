@@ -139,6 +139,11 @@
     .faq-answer { display: none; padding: 0 35px 20px 0; color: var(--muted); font-size: .88rem; }
     .faq-item.is-open .faq-answer { display: block; }
 
+    .faq-categories { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-top: 48px; }
+    .faq-category { background: #f8fafb; padding: 32px; border-radius: 16px; border: 1px solid var(--line); }
+    .category-title { display: flex; align-items: center; gap: 12px; color: var(--navy); font-size: 1.25rem; font-weight: 800; margin-bottom: 24px; border-bottom: 2px solid var(--orange); padding-bottom: 12px; }
+    .category-title i { color: var(--orange-dark); font-size: 1.5rem; }
+
     .contact { padding-top: 76px; padding-bottom: 76px; background: var(--orange); color: var(--white); }
     .contact-inner { display: flex; align-items: center; justify-content: space-between; gap: 38px; }
     .contact h2 { max-width: 580px; margin: 0 0 8px; font-size: clamp(1.9rem, 3vw, 3.1rem); line-height: 1.18; }
@@ -167,6 +172,7 @@
       .message-grid { gap: 34px; }
       .founder-photo { height: 430px; max-width: 540px; }
       .faq-layout { gap: 30px; }
+      .faq-categories { grid-template-columns: 1fr; gap: 32px; }
     }
     @media (max-width: 680px) {
       .container { width: min(100% - 28px, 560px); }
