@@ -1,4 +1,4 @@
-<!-- Version: v2.0.4 -->
+<!-- Version: v2.0.5 -->
 <!doctype html>
 <html lang="ja">
 <head>
@@ -26,12 +26,12 @@
 
   <header class="site-header" id="header">
     <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="エムワン企画">
+      <a class="brand" href="index.html" aria-current="page" aria-label="エムワン企画">
         <img src="images/m1-logo.png" alt="M1 logo">
         <span><small>M-ONE KIKAKU × M-ONE PROJECT <span class="brand-flags"><img src="https://flagcdn.com/jp.svg" alt="Japan"><img src="https://flagcdn.com/th.svg" alt="Thailand"></span></small><strong>日タイ人材サポート</strong></span>
       </a>
       <nav class="site-nav" id="site-nav" aria-label="Main navigation">
-        <a href="index.html"><span data-lang-content="ja" class="is-active">ホーム</span><span data-lang-content="en">Home</span><span data-lang-content="th">หน้าแรก</span></a>
+        <a href="index.html" aria-current="page"><span data-lang-content="ja" class="is-active">ホーム</span><span data-lang-content="en">Home</span><span data-lang-content="th">หน้าแรก</span></a>
         <a href="about.html" aria-current="page"><span data-lang-content="ja" class="is-active">私たちの強み</span><span data-lang-content="en">Why M1</span><span data-lang-content="th">จุดแข็งของเรา</span></a>
         <a href="network.html"><span data-lang-content="ja" class="is-active">日タイの拠点</span><span data-lang-content="en">Our network</span><span data-lang-content="th">เครือข่ายของเรา</span></a>
         <a href="process.html"><span data-lang-content="ja" class="is-active">サポートの流れ</span><span data-lang-content="en">How it works</span><span data-lang-content="th">ขั้นตอน</span></a>
@@ -43,7 +43,25 @@
   </header>
 
   <main id="top">
-    <section class="strengths" id="about">
+    
+    <!-- Vision & Philosophy Section -->
+    <section class="philosophy" style="padding: 80px 0; background: #f8fafb; border-bottom: 1px solid var(--line);">
+      <div class="container" style="max-width: 800px; text-align: center;">
+        <p class="eyebrow" style="color: var(--orange-dark);">Our Mission</p>
+        <h2 style="font-size: clamp(1.8rem, 3vw, 2.6rem); color: var(--navy); margin-bottom: 24px; font-weight: 800;">
+          <span data-lang-content="ja" class="is-active">言葉と文化の壁を越え、<br>共に成長できる未来をつくる。</span>
+          <span data-lang-content="en">Beyond Language and Culture, <br>Building a Future of Mutual Growth.</span>
+          <span data-lang-content="th">ก้าวข้ามกำแพงภาษาและวัฒนธรรม <br>สร้างอนาคตที่เติบโตไปด้วยกัน</span>
+        </h2>
+        <p style="color: var(--muted); font-size: 1.05rem; line-height: 1.8; text-align: left; margin-bottom: 0;">
+          <span data-lang-content="ja" class="is-active">私たちは、単に労働力を仲介する組織ではありません。タイから日本へ来る人々が、新たなステージで自分らしく働き、日本企業様もまた多様性の中で新しいエネルギーを得る。その出会いを一生の財産にするための「教育」と「対話」を最も大切にしています。日本にいながら実家のような安心感を提供する、それが私たちの約束です。</span>
+          <span data-lang-content="en">We are not a mere staffing intermediary. We believe in providing candidates with a stepping stone for career growth, while helping Japanese employers discover new perspectives. We place the highest importance on training and honest communication, ensuring everyone feels safe, supported, and at home.</span>
+          <span data-lang-content="th">เราไม่ใช่แค่ผู้ประสานงานจัดหางาน แต่เราใส่ใจในการสร้างโอกาสเติบโตให้กับแรงงานไทย ขณะเดียวกันก็ช่วยให้บริษัทญี่ปุ่นได้รับพลังงานใหม่ๆ เราให้ความสำคัญกับการอบรมและการสื่อสารที่โปร่งใส เพื่อให้ทุกคนรู้สึกปลอดภัยและอุ่นใจราวกับอยู่บ้านของตนเอง</span>
+        </p>
+      </div>
+    </section>
+
+<section class="strengths" id="about">
       <div class="container">
         <div class="section-head"><div><p class="eyebrow">Why M1</p><h2><span data-lang-content="ja" class="is-active">日タイの現場を知るから、<br>支援が途切れない。</span><span data-lang-content="en">Local knowledge makes support continuous.</span><span data-lang-content="th">ความเข้าใจทั้งสองประเทศ ทำให้การดูแลไม่ขาดตอน</span></h2></div><p><span data-lang-content="ja" class="is-active">採用だけで終わらず、働き続けられる状態づくりまで考えます。</span><span data-lang-content="en">We think beyond hiring and prepare the conditions for people to keep working well.</span><span data-lang-content="th">เราไม่ได้หยุดแค่การรับสมัคร แต่เตรียมความพร้อมให้ทำงานได้อย่างยั่งยืน</span></p></div>
         <div class="strength-grid">
@@ -53,14 +71,72 @@
         </div>
       </div>
     </section>
+
+    <!-- Core Values Section -->
+    <section class="core-values" style="padding: 80px 0; background: var(--white); border-top: 1px solid var(--line);">
+      <div class="container">
+        <div class="section-head" style="margin-bottom: 48px; text-align: center;">
+          <div>
+            <p class="eyebrow">Our Values</p>
+            <h2>
+              <span data-lang-content="ja" class="is-active">信頼を支える3つの原則</span>
+              <span data-lang-content="en">Three principles of trust</span>
+              <span data-lang-content="th">หลักการ 3 ประการแห่งความไว้วางใจ</span>
+            </h2>
+          </div>
+        </div>
+        <div class="strength-grid">
+          <article class="strength-card">
+            <div class="icon-box" style="background: #eef2f6;"><i class="ri-shield-user-line" style="color: var(--navy);"></i></div>
+            <h3>
+              <span data-lang-content="ja" class="is-active">徹底的な法令遵守 (コンプライアンス)</span>
+              <span data-lang-content="en">Strict Legal Compliance</span>
+              <span data-lang-content="th">การปฏิบัติตามกฎหมายอย่างเคร่งครัด</span>
+            </h3>
+            <p>
+              <span data-lang-content="ja" class="is-active">登録支援機関および認可派遣事業者として、両国の労働法、入管法を厳格に順守し、健全な雇用環境を守ります。</span>
+              <span data-lang-content="en">As a registered support agency and licensed operator, we strictly adhere to labor laws and immigration guidelines.</span>
+              <span data-lang-content="th">ในฐานะองค์กรสนับสนุนที่ขึ้นทะเบียนอย่างถูกต้อง เราปฏิบัติตามกฎหมายแรงงานและการเข้าเมืองอย่างเข้มงวด</span>
+            </p>
+          </article>
+          <article class="strength-card">
+            <div class="icon-box" style="background: #eef2f6;"><i class="ri-heart-pulse-line" style="color: var(--navy);"></i></div>
+            <h3>
+              <span data-lang-content="ja" class="is-active">心に寄り添う親身なサポート</span>
+              <span data-lang-content="en">Empathetic Personal Care</span>
+              <span data-lang-content="th">การดูแลอย่างใส่ใจและเข้าใจ</span>
+            </h3>
+            <p>
+              <span data-lang-content="ja" class="is-active">困ったことがあれば夜間や休日でもタイ語・日本語で相談可能。孤立させない生活指導を徹底します。</span>
+              <span data-lang-content="en">Our multilingual helpdesk supports candidates in Thai and Japanese, even during weekends and emergencies.</span>
+              <span data-lang-content="th">มีช่องทางปรึกษาช่วยเหลือภาษาไทยและญี่ปุ่นตลอดเวลา แม้ในวันหยุดหรือเกิดกรณีฉุกเฉิน</span>
+            </p>
+          </article>
+          <article class="strength-card">
+            <div class="icon-box" style="background: #eef2f6;"><i class="ri-team-line" style="color: var(--navy);"></i></div>
+            <h3>
+              <span data-lang-content="ja" class="is-active">強固なパートナーシップ</span>
+              <span data-lang-content="en">Long-term Partnership</span>
+              <span data-lang-content="th">พันธมิตรระยะยาว</span>
+            </h3>
+            <p>
+              <span data-lang-content="ja" class="is-active">企業様、就業者様双方と直接コミュニケーションを取り続け、互いの期待値のギャップを事前に解消します。</span>
+              <span data-lang-content="en">We foster strong connections between employers and employees to align expectations long-term.</span>
+              <span data-lang-content="th">เราประสานงานและพูดคุยกับทั้งสองฝ่ายอย่างใกล้ชิด เพื่อลดช่องว่างความคาดหวังในการทำงาน</span>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
   <section class="contact" id="contact">
-      <div class="container contact-inner"><div><p class="eyebrow" style="color:#fff1e9">Start with a conversation</p><h2><span data-lang-content="ja" class="is-active">まずは、今の課題を<br>聞かせてください。</span><span data-lang-content="en">Tell us what you need first.</span><span data-lang-content="th">เล่าความต้องการของคุณให้เราฟังก่อน</span></h2><p><span data-lang-content="ja" class="is-active">採用を検討中の企業様も、日本で働きたい方も、相談窓口からお気軽にどうぞ。</span><span data-lang-content="en">Companies considering hiring and people seeking work in Japan are welcome to start with a conversation.</span><span data-lang-content="th">ทั้งบริษัทที่กำลังพิจารณารับสมัครและผู้ที่ต้องการทำงานในญี่ปุ่น สามารถเริ่มต้นปรึกษาได้</span></p></div><a class="button" href="index.html"><span data-lang-content="ja" class="is-active">お問い合わせ窓口へ</span><span data-lang-content="en">Contact desk</span><span data-lang-content="th">ติดต่อเรา</span><i class="ri-arrow-up-right-line"></i></a></div>
+      <div class="container contact-inner"><div><p class="eyebrow" style="color:#fff1e9">Start with a conversation</p><h2><span data-lang-content="ja" class="is-active">まずは、今の課題を<br>聞かせてください。</span><span data-lang-content="en">Tell us what you need first.</span><span data-lang-content="th">เล่าความต้องการของคุณให้เราฟังก่อน</span></h2><p><span data-lang-content="ja" class="is-active">採用を検討中の企業様も、日本で働きたい方も、相談窓口からお気軽にどうぞ。</span><span data-lang-content="en">Companies considering hiring and people seeking work in Japan are welcome to start with a conversation.</span><span data-lang-content="th">ทั้งบริษัทที่กำลังพิจารณารับสมัครและผู้ที่ต้องการทำงานในญี่ปุ่น สามารถเริ่มต้นปรึกษาได้</span></p></div><a class="button" href="index.html" aria-current="page"><span data-lang-content="ja" class="is-active">お問い合わせ窓口へ</span><span data-lang-content="en">Contact desk</span><span data-lang-content="th">ติดต่อเรา</span><i class="ri-arrow-up-right-line"></i></a></div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© M-One Kikaku / M-One Project <span id="staff-version-display" style="opacity: 0.6; margin-left: 10px; font-size: 0.7rem;">v2.0.4</span></p>
+      <p>© M-One Kikaku / M-One Project <span id="staff-version-display" style="opacity: 0.6; margin-left: 10px; font-size: 0.7rem;">v2.0.5</span></p>
       <div class="footer-links">
         <a href="about.html" aria-current="page"><span data-lang-content="ja" class="is-active">強み</span><span data-lang-content="en">About</span><span data-lang-content="th">จุดแข็ง</span></a>
         <a href="company.html"><span data-lang-content="ja" class="is-active">会社紹介</span><span data-lang-content="en">Profile</span><span data-lang-content="th">ข้อมูลบริษัท</span></a>

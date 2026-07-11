@@ -1,4 +1,4 @@
-<!-- Version: v2.0.4 -->
+<!-- Version: v2.0.5 -->
 <!doctype html>
 <html lang="ja">
 <head>
@@ -26,12 +26,12 @@
 
   <header class="site-header" id="header">
     <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="エムワン企画">
+      <a class="brand" href="index.html" aria-current="page" aria-label="エムワン企画">
         <img src="images/m1-logo.png" alt="M1 logo">
         <span><small>M-ONE KIKAKU × M-ONE PROJECT <span class="brand-flags"><img src="https://flagcdn.com/jp.svg" alt="Japan"><img src="https://flagcdn.com/th.svg" alt="Thailand"></span></small><strong>日タイ人材サポート</strong></span>
       </a>
       <nav class="site-nav" id="site-nav" aria-label="Main navigation">
-        <a href="index.html"><span data-lang-content="ja" class="is-active">ホーム</span><span data-lang-content="en">Home</span><span data-lang-content="th">หน้าแรก</span></a>
+        <a href="index.html" aria-current="page"><span data-lang-content="ja" class="is-active">ホーム</span><span data-lang-content="en">Home</span><span data-lang-content="th">หน้าแรก</span></a>
         <a href="about.html"><span data-lang-content="ja" class="is-active">私たちの強み</span><span data-lang-content="en">Why M1</span><span data-lang-content="th">จุดแข็งของเรา</span></a>
         <a href="network.html"><span data-lang-content="ja" class="is-active">日タイの拠点</span><span data-lang-content="en">Our network</span><span data-lang-content="th">เครือข่ายของเรา</span></a>
         <a href="process.html" aria-current="page"><span data-lang-content="ja" class="is-active">サポートの流れ</span><span data-lang-content="en">How it works</span><span data-lang-content="th">ขั้นตอน</span></a>
@@ -58,14 +58,118 @@
         </div>
       </div>
     </section>
+
+    <!-- Process Timeline & Document Support Details -->
+    <section class="process-details" style="padding: 80px 0; background: var(--white); border-top: 1px solid var(--line);">
+      <div class="container">
+        <div class="section-head" style="margin-bottom: 48px;">
+          <div>
+            <p class="eyebrow">Details & Timeline</p>
+            <h2>
+              <span data-lang-content="ja" class="is-active">採用までのタイムラインと書類支援</span>
+              <span data-lang-content="en">Timeline & document handling</span>
+              <span data-lang-content="th">ระยะเวลาดำเนินการและการจัดการเอกสาร</span>
+            </h2>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 48px;">
+          <div style="background: #f8fafb; padding: 32px; border-radius: var(--radius); border: 1px solid var(--line);">
+            <h4 style="color: var(--navy); font-weight: 800; font-size: 1.1rem; margin-bottom: 20px; border-bottom: 2px solid var(--sky); padding-bottom: 10px;">
+              <span data-lang-content="ja" class="is-active">標準スケジュール（約4〜6ヶ月）</span>
+              <span data-lang-content="en">Standard Timeline (4 to 6 Months)</span>
+              <span data-lang-content="th">ระยะเวลามาตรฐาน (4 ถึง 6 เดือน)</span>
+            </h4>
+            <ul style="margin: 0; padding: 0 0 0 16px; display: grid; gap: 16px; color: var(--muted); font-size: 0.9rem; line-height: 1.55;">
+              <li>
+                <strong style="color: var(--navy);">
+                  <span data-lang-content="ja" class="is-active">1ヶ月目：募集と選考</span>
+                  <span data-lang-content="en">Month 1: Recruitment & Screening</span>
+                  <span data-lang-content="th">เดือนที่ 1: การรับสมัครและการคัดเลือก</span>
+                </strong><br>
+                <span data-lang-content="ja" class="is-active">要件の定義、タイ現地での候補者の募集、一次面接、雇用条件の合意。</span>
+                <span data-lang-content="en">Define criteria, source candidates in Thailand, host initial interviews and finalize agreements.</span>
+                <span data-lang-content="th">กำหนดความต้องการ รับสมัครผู้สมัครในไทย สัมภาษณ์เบื้องต้น และตกลงเงื่อนไขการจ้างงาน</span>
+              </li>
+              <li>
+                <strong style="color: var(--navy);">
+                  <span data-lang-content="ja" class="is-active">2〜3ヶ月目：内定・研修・ビザ申請</span>
+                  <span data-lang-content="en">Months 2-3: Job Offer, Training & Visa Application</span>
+                  <span data-lang-content="th">เดือนที่ 2-3: การเสนอรับเข้าทำงาน การฝึกอบรม และยื่นวีซ่า</span>
+                </strong><br>
+                <span data-lang-content="ja" class="is-active">内定確定、タイ現地施設での事前日本語・マナー講習開始、CoE申請書類の準備・提出。</span>
+                <span data-lang-content="en">Issue job offer, commence pre-departure Japanese training in Thailand, prepare and submit CoE applications.</span>
+                <span data-lang-content="th">ออกใบเสนอรับเข้าทำงาน เริ่มการฝึกอบรมภาษาญี่ปุ่นในไทย และเตรียมยื่นเอกสารขอใบรับรอง CoE</span>
+              </li>
+              <li>
+                <strong style="color: var(--navy);">
+                  <span data-lang-content="ja" class="is-active">4〜5ヶ月目：CoE交付・渡航準備</span>
+                  <span data-lang-content="en">Months 4-5: CoE Issuance & Flight Prep</span>
+                  <span data-lang-content="th">เดือนที่ 4-5: การอนุมัติ CoE และเตรียมตัวเดินทาง</span>
+                </strong><br>
+                <span data-lang-content="ja" class="is-active">出入国在留管理局からCoEが交付され次第、現地日本大使館でビザを取得、航空券手配、住居の最終調整。</span>
+                <span data-lang-content="en">Receive CoE, retrieve visa from the Japanese Embassy, arrange flights, and finalize housing setups.</span>
+                <span data-lang-content="th">ได้รับอนุมัติใบ CoE ดำเนินการยื่นขอวีซ่า ณ สถานทูตญี่ปุ่น จองตั๋วเครื่องบิน และเตรียมการที่พักในขั้นตอนสุดท้าย</span>
+              </li>
+              <li>
+                <strong style="color: var(--navy);">
+                  <span data-lang-content="ja" class="is-active">6ヶ月目〜：入国・就業開始・フォロー</span>
+                  <span data-lang-content="en">Month 6+: Arrival, Commencement & Support</span>
+                  <span data-lang-content="th">เดือนที่ 6 เป็นต้นไป: เดินทางถึงญี่ปุ่น เริ่มงาน และการดูแลติดตามผล</span>
+                </strong><br>
+                <span data-lang-content="ja" class="is-active">空港での出迎え、市役所での転入届手続き、アパート生活立ち上げ、就業開始。定期面談サポートの開始。</span>
+                <span data-lang-content="en">Pick up at the airport, register address at the city office, settle into apartments, and start work. Periodic check-ins begin.</span>
+                <span data-lang-content="th">รับที่สนามบิน พาทะเบียนที่อยู่ ณ ที่ว่าการอำเภอ ย้ายเข้าที่พัก และเริ่มทำงาน เริ่มการติดตามผลเป็นระยะ</span>
+              </li>
+            </ul>
+          </div>
+
+          <div style="background: var(--white); border: 1px solid var(--line); padding: 32px; border-radius: var(--radius);">
+            <h4 style="color: var(--navy); font-weight: 800; font-size: 1.1rem; margin-bottom: 20px; border-bottom: 2px solid var(--orange); padding-bottom: 10px;">
+              <span data-lang-content="ja" class="is-active">エムワンが代行・支援する手続き</span>
+              <span data-lang-content="en">Procedures We Support</span>
+              <span data-lang-content="th">ขั้นตอนที่เราช่วยเหลือและดำเนินการแทน</span>
+            </h4>
+            <ul style="margin: 0; padding: 0; list-style: none; display: grid; gap: 14px; font-size: 0.88rem; color: #4b5563;">
+              <li style="display: flex; gap: 8px;"><i class="ri-checkbox-circle-fill" style="color: var(--green);"></i>
+                <span data-lang-content="ja" class="is-active">在留資格認定証明書(CoE)の代理申請</span>
+                <span data-lang-content="en">Certificate of Eligibility (CoE) agency</span>
+                <span data-lang-content="th">ตัวแทนยื่นขอใบรับรองสถานภาพการพำนัก (CoE)</span>
+              </li>
+              <li style="display: flex; gap: 8px;"><i class="ri-checkbox-circle-fill" style="color: var(--green);"></i>
+                <span data-lang-content="ja" class="is-active">タイ現地労働省(DOE)への各種届出</span>
+                <span data-lang-content="en">Thai Ministry of Labour (DOE) registration</span>
+                <span data-lang-content="th">การยื่นเอกสารกับกระทรวงแรงงานไทย (DOE)</span>
+              </li>
+              <li style="display: flex; gap: 8px;"><i class="ri-checkbox-circle-fill" style="color: var(--green);"></i>
+                <span data-lang-content="ja" class="is-active">特定技能雇用契約書・支援計画書作成</span>
+                <span data-lang-content="en">Technical employment plans & contracts</span>
+                <span data-lang-content="th">จัดทำสัญญาจ้างและแผนสนับสนุนทักษะเฉพาะทาง</span>
+              </li>
+              <li style="display: flex; gap: 8px;"><i class="ri-checkbox-circle-fill" style="color: var(--green);"></i>
+                <span data-lang-content="ja" class="is-active">海外旅行保険・生活インフラ契約のサポート</span>
+                <span data-lang-content="en">Travel insurance & utilities contracts</span>
+                <span data-lang-content="th">การทำประกันเดินทางและการเปิดใช้น้ำ ไฟ และอินเทอร์เน็ต</span>
+              </li>
+              <li style="display: flex; gap: 8px;"><i class="ri-checkbox-circle-fill" style="color: var(--green);"></i>
+                <span data-lang-content="ja" class="is-active">定期的な監査・巡回・三者面談報告の作成</span>
+                <span data-lang-content="en">Periodic check-in reports & audits</span>
+                <span data-lang-content="th">การตรวจประเมินหน้างานและการจัดประชุมสามฝ่ายเป็นประจำ</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
   <section class="contact" id="contact">
-      <div class="container contact-inner"><div><p class="eyebrow" style="color:#fff1e9">Start with a conversation</p><h2><span data-lang-content="ja" class="is-active">まずは、今の課題を<br>聞かせてください。</span><span data-lang-content="en">Tell us what you need first.</span><span data-lang-content="th">เล่าความต้องการของคุณให้เราฟังก่อน</span></h2><p><span data-lang-content="ja" class="is-active">採用を検討中の企業様も、日本で働きたい方も、相談窓口からお気軽にどうぞ。</span><span data-lang-content="en">Companies considering hiring and people seeking work in Japan are welcome to start with a conversation.</span><span data-lang-content="th">ทั้งบริษัทที่กำลังพิจารณารับสมัครและผู้ที่ต้องการทำงานในญี่ปุ่น สามารถเริ่มต้นปรึกษาได้</span></p></div><a class="button" href="index.html"><span data-lang-content="ja" class="is-active">お問い合わせ窓口へ</span><span data-lang-content="en">Contact desk</span><span data-lang-content="th">ติดต่อเรา</span><i class="ri-arrow-up-right-line"></i></a></div>
+      <div class="container contact-inner"><div><p class="eyebrow" style="color:#fff1e9">Start with a conversation</p><h2><span data-lang-content="ja" class="is-active">まずは、今の課題を<br>聞かせてください。</span><span data-lang-content="en">Tell us what you need first.</span><span data-lang-content="th">เล่าความต้องการของคุณให้เราฟังก่อน</span></h2><p><span data-lang-content="ja" class="is-active">採用を検討中の企業様も、日本で働きたい方も、相談窓口からお気軽にどうぞ。</span><span data-lang-content="en">Companies considering hiring and people seeking work in Japan are welcome to start with a conversation.</span><span data-lang-content="th">ทั้งบริษัทที่กำลังพิจารณารับสมัครและผู้ที่ต้องการทำงานในญี่ปุ่น สามารถเริ่มต้นปรึกษาได้</span></p></div><a class="button" href="index.html" aria-current="page"><span data-lang-content="ja" class="is-active">お問い合わせ窓口へ</span><span data-lang-content="en">Contact desk</span><span data-lang-content="th">ติดต่อเรา</span><i class="ri-arrow-up-right-line"></i></a></div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© M-One Kikaku / M-One Project <span id="staff-version-display" style="opacity: 0.6; margin-left: 10px; font-size: 0.7rem;">v2.0.4</span></p>
+      <p>© M-One Kikaku / M-One Project <span id="staff-version-display" style="opacity: 0.6; margin-left: 10px; font-size: 0.7rem;">v2.0.5</span></p>
       <div class="footer-links">
         <a href="about.html"><span data-lang-content="ja" class="is-active">強み</span><span data-lang-content="en">About</span><span data-lang-content="th">จุดแข็ง</span></a>
         <a href="company.html"><span data-lang-content="ja" class="is-active">会社紹介</span><span data-lang-content="en">Profile</span><span data-lang-content="th">ข้อมูลบริษัท</span></a>
