@@ -110,4 +110,24 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
     toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   }
+
+  // Contact Form Submission Simulation
+  const forms = document.querySelectorAll('.form-box form');
+  const toast = document.getElementById('success-toast');
+  if (forms.length > 0 && toast) {
+    forms.forEach((form) => {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        // Show Toast
+        toast.classList.add('show');
+        setTimeout(() => {
+          toast.classList.remove('show');
+        }, 4000);
+        
+        // Reset Form
+        form.reset();
+      });
+    });
+  }
 });
