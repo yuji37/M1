@@ -319,8 +319,12 @@
 .form-control { width: 100%; padding: 12px 16px; font-size: 0.9rem; border: 1px solid var(--line); border-radius: 8px; background: #f8fafb; color: var(--navy); transition: all 0.2s ease; outline: none; }
 .form-control:focus { background: var(--white); border-color: var(--orange); box-shadow: 0 0 8px rgba(255, 122, 0, 0.2); }
 textarea.form-control { resize: vertical; min-height: 120px; }
-.form-submit-btn { width: 100%; padding: 14px; font-weight: 800; border-radius: 8px; border: none; background: var(--orange-dark); color: var(--white); cursor: pointer; transition: all 0.2s ease; display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-size: 0.95rem; }
-.form-submit-btn:hover { background: var(--orange); transform: translateY(-2px); box-shadow: 0 4px 12px rgba(255, 122, 0, 0.25); }
+.form-submit-btn { width: 100%; padding: 14px; font-weight: 800; border-radius: 8px; border: none; color: var(--white); cursor: pointer; transition: all 0.2s ease; display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-size: 0.95rem; }
+.form-submit-btn:hover { transform: translateY(-2px); }
+.form-submit-btn.btn-b2b { background: var(--blue); }
+.form-submit-btn.btn-b2b:hover { background: var(--navy); box-shadow: 0 6px 16px rgba(29, 107, 146, 0.25); }
+.form-submit-btn.btn-b2c { background: var(--orange-dark); }
+.form-submit-btn.btn-b2c:hover { background: var(--orange); box-shadow: 0 6px 16px rgba(198, 95, 43, 0.25); }
 
 /* Success Toast */
 .toast { position: fixed; bottom: 32px; right: 32px; background: var(--navy); color: var(--white); padding: 16px 24px; border-radius: var(--radius); box-shadow: 0 12px 32px rgba(0,0,0,0.15); display: flex; align-items: center; gap: 12px; z-index: 100; transform: translateY(100px); opacity: 0; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); pointer-events: none; }
