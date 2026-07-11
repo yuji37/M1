@@ -302,6 +302,30 @@
 .business-features { margin: 0; padding: 0 0 0 20px; color: #4b5563; font-size: 0.85rem; display: grid; gap: 8px; }
 
 @media (max-width: 880px) {
-  .stats-grid, .staff-grid, .business-grid { grid-template-columns: 1fr; gap: 24px; }
+  .stats-grid, .staff-grid, .business-grid, .checklist-grid, .testimonial-grid, .emergency-grid { grid-template-columns: 1fr; gap: 24px; }
   .news-item { flex-direction: column; align-items: flex-start; gap: 8px; }
 }
+
+/* Additional Custom Layout Styles */
+.partner-logos { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; align-items: center; margin-top: 32px; }
+.partner-badge { padding: 12px 24px; background: #f8fafb; border: 1px solid var(--line); border-radius: 8px; color: var(--navy); font-weight: 700; font-size: 0.9rem; box-shadow: 0 4px 12px rgba(0,0,0,0.01); display: inline-flex; align-items: center; gap: 8px; }
+.partner-badge i { color: var(--orange-dark); font-size: 1.1rem; }
+
+.checklist-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 32px; }
+.checklist-box { background: var(--white); padding: 28px; border-radius: var(--radius); border: 1px solid var(--line); box-shadow: 0 8px 24px rgba(22, 51, 67, 0.02); }
+.checklist-box h4 { margin: 0 0 16px; color: var(--navy); font-size: 1.05rem; font-weight: 800; border-bottom: 2px solid var(--sky); padding-bottom: 8px; }
+.checklist-box ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+.checklist-box li { display: flex; align-items: flex-start; gap: 8px; font-size: 0.88rem; color: #4b5563; line-height: 1.45; }
+.checklist-box li i { color: var(--green); font-size: 1.05rem; flex-shrink: 0; margin-top: 2px; }
+
+.testimonial-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 40px; }
+.testimonial-card { background: var(--white); padding: 32px; border-radius: var(--radius); border: 1px solid var(--line); box-shadow: 0 8px 24px rgba(22, 51, 67, 0.02); display: flex; flex-direction: column; justify-content: space-between; }
+.testimonial-text { font-size: 0.92rem; color: var(--ink); line-height: 1.6; margin: 0 0 20px; font-style: italic; }
+.testimonial-author { font-size: 0.85rem; font-weight: 800; color: var(--orange-dark); display: flex; align-items: center; gap: 8px; }
+.testimonial-author::before { content: ""; width: 16px; height: 2px; background: var(--orange); display: inline-block; }
+
+.emergency-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 32px; }
+.emergency-card { background: #fff5f0; border: 1px solid #ffe3d3; padding: 24px; border-radius: 12px; text-align: center; }
+.emergency-card h4 { margin: 0 0 8px; color: var(--navy); font-size: 1rem; font-weight: 800; }
+.emergency-phone { font-size: 1.3rem; font-weight: 800; color: var(--orange-dark); margin: 8px 0; }
+.emergency-desc { font-size: 0.82rem; color: var(--muted); margin: 0; }
